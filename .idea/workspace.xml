@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main/Archivos/Indexado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Archivos/Maestro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Archivos/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/TDA/Aerolinea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexB.gsh" beforeDir="false" afterPath="$PROJECT_DIR$/indexB.gsh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maestroB.gsh" beforeDir="false" afterPath="$PROJECT_DIR$/maestroB.gsh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Archivos/Maestro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Archivos/Maestro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Archivos/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Archivos/Main.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,12 +73,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3921" />
+          <entry key="java" value="4395" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3921" />
+          <entry key="JAVA" value="4395" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -106,24 +104,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+            <state relative-caret-position="93">
+              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Maestro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="-63">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3815#3816#0" expanded="true" />
-                <element signature="e#3843#3844#0" expanded="true" />
+                <element signature="e#4155#4156#0" expanded="true" />
+                <element signature="e#4183#4184#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Indexado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="54" column="83" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="83" />
+            <state relative-caret-position="501">
+              <caret line="54" column="85" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,6 +152,8 @@
     <findStrings>
       <find>16</find>
       <find>archivo</find>
+      <find>lreg</find>
+      <find>34</find>
     </findStrings>
     <replaceStrings>
       <replace>MAX</replace>
@@ -177,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/Main/TDA/Maleta.java" />
         <option value="$PROJECT_DIR$/src/Main/TDA/Aerolinea.java" />
         <option value="$PROJECT_DIR$/src/Main/Archivos/Indexado.java" />
-        <option value="$PROJECT_DIR$/src/Main/Archivos/Main.java" />
         <option value="$PROJECT_DIR$/src/Main/Archivos/Maestro.java" />
+        <option value="$PROJECT_DIR$/src/Main/Archivos/Main.java" />
       </list>
     </option>
   </component>
@@ -254,7 +254,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537519424850" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537544915926" />
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
   </component>
@@ -380,12 +380,12 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1537477633426" duration="27466000" />
+      <workItem from="1537477633426" duration="31406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28768000" />
+    <option name="totallyTimeSpent" value="32708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1386" height="788" extended-state="0" />
@@ -404,7 +404,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32874617" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32874617" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39908257" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39908257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -443,17 +443,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Archivos/Main.java</url>
-          <line>42</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main/Archivos/Indexado.java</url>
-          <line>27</line>
-          <properties class="Main.Archivos.Indexado" method="leerArchivoSecuencial">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -531,22 +523,10 @@
     <entry file="file://$PROJECT_DIR$/indexB.gsh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Maestro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3815#3816#0" expanded="true" />
-            <element signature="e#3843#3844#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Indexado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="54" column="83" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="83" />
+        <state relative-caret-position="501">
+          <caret line="54" column="85" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -555,8 +535,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+        <state relative-caret-position="93">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Maestro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4155#4156#0" expanded="true" />
+            <element signature="e#4183#4184#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

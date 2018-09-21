@@ -29,7 +29,6 @@ public class Maestro {
             for (int i = 0; i < datos; i++) {
                 if (cont < nodes.length) {
                     if (i == Integer.parseInt(nodes[cont].split(" ")[0]) - 1) {
-                        System.out.println((nodes[cont].split(" ")[1]));
                         archivoE.writeInt(Integer.parseInt(nodes[cont].split(" ")[1]));
                         cont++;
                     } else
@@ -57,6 +56,9 @@ public class Maestro {
                     nombre[i] = archivoL.readChar();
                 nom = new String(nombre).replace('\0', ' ');
                 System.out.println("Nombre: " + nom);
+                System.out.println("Nodos: ");
+                for (int i = 0; i < datos; i++)
+                    System.out.println((i + 1) + ") " + archivoL.readInt());
             } else
                 System.out.println("Error, Esa dirección no existe.");
 
@@ -92,12 +94,17 @@ public class Maestro {
                 for (int i = 0; i < 15; i++)
                     archivoL.writeChar('0');
                 for (int i = 0; i < datos; i++)
-                    archivoE.writeInt(0);
+                    archivoL.writeInt(0);
+                archivoL.seek(0);
                 while ((apActual = archivoL.getFilePointer()) != (apFinal = archivoL.length())) {
                     archivoL.readInt();
-                    for (int i = 0; i < 15; i++)
+                    for (int e = 0; e < 15; e++)
                         archivoL.readChar();
-
+                    for (int i = 0; i < datos; i++)
+                        if (i == posicion / (34 + 4 * datos))
+                            archivoL.writeInt(0);
+                        else
+                            archivoL.readInt();
                 }
             } else
                 System.out.println("Error, Esa dirección no existe.");
