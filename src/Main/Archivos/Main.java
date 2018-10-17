@@ -6,20 +6,9 @@ public class Main {
     public static void main(String[] args) {
         String nom, nodos;
         Scanner s = new Scanner(System.in);
-        int llave, ultimo = 0, aux = 0;
+        int llave, aux = 0;
         Maestro maestro = new Maestro();
         Indexado index = new Indexado();
-        /*for (int i = 0; i < aux; i++) {
-            System.out.println("Ingresa la llave: ");
-            llave = s.nextInt();
-            s.nextLine();
-            System.out.println("Ingresa la Regla: ");
-            nom = s.nextLine();
-            maestro.escribirB(llave, nom);
-            index.escribirArchivo(llave, i * (34 + 4 * maestro.getDatos()));
-            ultimo = i;
-        }
-        ultimo += 1;*/
         do {
             System.out.println("Ingresa la opción deseada");
             System.out.println("    1)Ingresar Regla");
@@ -32,17 +21,13 @@ public class Main {
             aux = s.nextInt();
             switch (aux) {
                 case 1:
-                    //if (ultimo < maestro.getDatos()) {
-                        System.out.println("Ingresa la llave: ");
-                        llave = s.nextInt();
-                        s.nextLine();
-                        System.out.println("Ingresa la regla: ");
-                        nom = s.nextLine();
-                        maestro.escribirB(llave, nom);
-                        index.escribirArchivo(llave, maestro.getUltimo());
-                        ultimo += 1;
-                    /*} else
-                        System.out.println("El archivo maestro necesita mantenimiento :(");*/
+                    System.out.println("Ingresa la llave: ");
+                    llave = s.nextInt();
+                    s.nextLine();
+                    System.out.println("Ingresa la regla (Normalizada): ");
+                    nom = s.nextLine();
+                    maestro.escribirB(llave, nom);
+                    index.escribirArchivo(llave, maestro.getUltimo());
                     break;
                 case 2:
                     System.out.println("Ingresa la llave a buscar: ");
@@ -50,13 +35,10 @@ public class Main {
                     maestro.leerB(index.leerArchivoSecuencial(llave));
                     break;
                 case 3:
-                    //if (ultimo < maestro.getDatos()) {
-                        System.out.println("Ingresa la llave a actualizar: ");
-                        llave = s.nextInt();
-                        maestro.actualizar(index.leerArchivoSecuencial(llave), false);
-                        System.out.println("Se actualizo correctamente :3");
-                    /*} else
-                        System.out.println("El archivo maestro necesita mantenimiento :(");*/
+                    System.out.println("Ingresa la llave a actualizar: ");
+                    llave = s.nextInt();
+                    maestro.actualizar(index.leerArchivoSecuencial(llave), false);
+                    System.out.println("Se actualizo correctamente :3");
                     break;
                 case 4:
                     System.out.println("Ingresa la llave a eliminar: ");
@@ -74,6 +56,6 @@ public class Main {
                     System.out.println("Gracias :3");
                     break;
             }
-        } while (aux != 7);
+        } while (aux < 7);
     }
 }

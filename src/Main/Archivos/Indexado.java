@@ -5,7 +5,6 @@ import java.io.RandomAccessFile;
 
 public class Indexado {
     private RandomAccessFile leer;
-    private RandomAccessFile archivoE;
     private long ultima = 0;
 
     public Indexado() {
@@ -74,15 +73,14 @@ public class Indexado {
 
     public void mostrarTodo() {
         int auxl;
-        long apActual, apFinal, salida = -1, auxd;
+        long apActual, apFinal, auxd;
         try {
-
             leer = new RandomAccessFile("indexB.gsh", "r");
             while ((apActual = leer.getFilePointer()) != (apFinal = leer.length())) {
                 auxl = leer.readInt();
                 auxd = leer.readLong();
-                if(auxl!=0) {
-                    System.out.println("Llave: " + auxl + " - Dirección: " + auxd);
+                if (auxl != 0) {
+                    System.out.println("Llave: " + auxl + " - Dirección: " + (auxd / 202 + 1));
                 }
             }
             leer.close();

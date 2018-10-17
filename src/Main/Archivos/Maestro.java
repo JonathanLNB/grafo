@@ -6,17 +6,14 @@ import java.util.Scanner;
 public class Maestro {
     private RandomAccessFile archivoL;
     private RandomAccessFile archivoE;
-    private long lreg = 0, ultimo = 0;
-    private int matriz[][], datos;
+    private long ultimo = 0;
+
 
     public Maestro() {
-        /*this.datos = (int) ((int) datos + datos * .4);
-        matriz = new int[this.datos][this.datos];*/
     }
 
     public void escribirB(int llave, String nombre) {
         StringBuffer bf;
-        int cont = 0;
         try {
             if (!nombre.contains("∨") || !nombre.contains("v")) {
                 archivoE = new RandomAccessFile("maestroB.gsh", "rw");
@@ -28,8 +25,7 @@ public class Maestro {
                 archivoE.writeChars(bf.toString());
                 ultimo = archivoE.getFilePointer();
                 archivoE.close();
-            }
-            else
+            } else
                 System.out.println("Esta regla no esta normalizada");
         } catch (IOException e) {
             e.printStackTrace();
@@ -60,16 +56,16 @@ public class Maestro {
     public void mostrarTodo() {
         String nom;
         int valor;
-        long apActual, apFinal, salida = -1;
+        long apActual, apFinal;
         char nombre[] = new char[99];
         try {
             archivoL = new RandomAccessFile("maestroB.gsh", "r");
             while ((apActual = archivoL.getFilePointer()) != (apFinal = archivoL.length())) {
-                valor =archivoL.readInt();
+                valor = archivoL.readInt();
                 for (int i = 0; i < nombre.length; i++)
                     nombre[i] = archivoL.readChar();
                 nom = new String(nombre).replace('\0', ' ');
-                if(valor != 0) {
+                if (valor != 0) {
                     System.out.println("Llave: " + valor);
                     System.out.println("Regla: " + nom);
                     System.out.println("---------------------------------------------------");
@@ -83,9 +79,8 @@ public class Maestro {
     public void actualizar(long posicion, boolean eliminar) {
         Scanner s = new Scanner(System.in);
         StringBuffer bf;
-        String nom, nodos;
+        String nom;
         int llave;
-        long apActual, apFinal;
         char nombre[] = new char[99];
         try {
             if (posicion != -1) {
@@ -97,33 +92,18 @@ public class Maestro {
                     for (int i = 0; i < nombre.length; i++)
                         nombre[i] = archivoL.readChar();
                     nom = new String(nombre).replace('\0', ' ');
-                    System.out.println("Cambiar de " + nom.trim() + " a la regla: ");
+                    System.out.println("Cambiar de " + nom.trim() + " a la regla (Normalizado): ");
                     nom = s.nextLine();
                     archivoL.seek(posicion);
                     archivoL.writeInt(llave);
                     bf = new StringBuffer(nom);
                     bf.setLength(99);
                     archivoL.writeChars(bf.toString());
-                    //escribirB(llave, nom);
                     archivoL.seek(posicion);
-                }
-                else {
+                } else {
                     archivoL.writeInt(0);
                     for (int i = 0; i < 99; i++)
                         archivoL.writeChar('0');
-                    /*for (int i = 0; i < datos; i++)
-                        archivoL.writeInt(0);
-                    archivoL.seek(0);
-                    while ((apActual = archivoL.getFilePointer()) != (apFinal = archivoL.length())) {
-                        archivoL.readInt();
-                        for (int e = 0; e < 99; e++)
-                            archivoL.readChar();
-                        for (int i = 0; i < datos; i++)
-                            if (i == posicion / (34 + 4 * datos))
-                                archivoL.writeInt(0);
-                            else
-                                archivoL.readInt();
-                    }*/
                 }
             } else
                 System.out.println("Error, Ese registro no existe.");
@@ -133,10 +113,7 @@ public class Maestro {
         }
     }
 
-    public int getDatos() {
-        return datos;
-    }
-    public int getUltimo(){
-        return (int) (ultimo-202);
+    public int getUltimo() {
+        return (int) (ultimo - 202);
     }
 }
