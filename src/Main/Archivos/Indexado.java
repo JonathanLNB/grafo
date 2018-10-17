@@ -70,4 +70,19 @@ public class Indexado {
             return salida;
         }
     }
+
+    public void mostrarTodo() {
+        int valor;
+        long apActual, apFinal, salida = -1;
+        try {
+
+            leer = new RandomAccessFile("indexB.gsh", "r");
+            while ((apActual = leer.getFilePointer()) != (apFinal = leer.length())) {
+                System.out.println("Llave: "+leer.readInt()+"Dirección: "+leer.readLong());
+            }
+            leer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

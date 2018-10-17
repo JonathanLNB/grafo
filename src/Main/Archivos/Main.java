@@ -29,7 +29,9 @@ public class Main {
             System.out.println("    2)Leer Nodo");
             System.out.println("    3)Actualizar Nodo");
             System.out.println("    4)Eliminar Nodo");
-            System.out.println("    5)Salir");
+            System.out.println("    5)Mostrar Maestro");
+            System.out.println("    6)Mostrar Indice");
+            System.out.println("    7)Salir");
             aux = s.nextInt();
             switch (aux) {
                 case 1:
@@ -68,10 +70,16 @@ public class Main {
                     maestro.actualizar(index.eliminarArchivoSecuencial(llave), true);
                     System.out.println("Se elimino correctamente :3");
                     break;
+                case 5:
+                    maestro.mostrarTodo();
+                    break;
+                case 6:
+                    index.mostrarTodo();
+                    break;
                 default:
-                    System.out.println("Bye");
+                    System.out.println("Gracias :3");
                     break;
             }
-        } while (aux != 5);
+        } while (aux != 7);
     }
 }

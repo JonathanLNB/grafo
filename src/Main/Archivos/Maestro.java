@@ -11,7 +11,7 @@ public class Maestro {
 
     public Maestro(int datos) {
         this.datos = (int) ((int) datos + datos * .4);
-        matriz = new int[datos][datos];
+        matriz = new int[this.datos][this.datos];
     }
 
     public void escribirB(int llave, String nombre, String nodos) {
@@ -67,6 +67,29 @@ public class Maestro {
         }
     }
 
+    public void mostrarTodo() {
+        String nom;
+        int valor;
+        long apActual, apFinal, salida = -1;
+        char nombre[] = new char[15];
+        try {
+            archivoL = new RandomAccessFile("maestroB.gsh", "r");
+            while ((apActual = archivoL.getFilePointer()) != (apFinal = archivoL.length())) {
+                System.out.println("Llave: " + archivoL.readInt());
+                for (int i = 0; i < nombre.length; i++)
+                    nombre[i] = archivoL.readChar();
+                nom = new String(nombre).replace('\0', ' ');
+                System.out.println("Nombre: " + nom);
+                System.out.println("Nodos: ");
+                for (int i = 0; i < datos; i++)
+                    System.out.println((i + 1) + ") " + archivoL.readInt());
+                System.out.println("---------------------------------------------------");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void actualizar(long posicion, boolean eliminar) {
         Scanner s = new Scanner(System.in);
         String nom, nodos;
@@ -107,7 +130,7 @@ public class Maestro {
                             archivoL.readInt();
                 }
             } else
-                System.out.println("Error, Esa dirección no existe.");
+                System.out.println("Error, Ese registro no existe.");
             archivoL.close();
         } catch (IOException e) {
             e.printStackTrace();
