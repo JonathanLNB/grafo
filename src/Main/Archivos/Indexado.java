@@ -15,6 +15,7 @@ public class Indexado {
     public void escribirArchivo(int llave, long pos) {
         try {
             RandomAccessFile archivo = new RandomAccessFile("indexB.gsh", "rw");
+            ultima = archivo.length();
             archivo.seek(ultima);
             archivo.writeInt(llave);
             archivo.writeLong(pos);
@@ -72,13 +73,17 @@ public class Indexado {
     }
 
     public void mostrarTodo() {
-        int valor;
-        long apActual, apFinal, salida = -1;
+        int auxl;
+        long apActual, apFinal, salida = -1, auxd;
         try {
 
             leer = new RandomAccessFile("indexB.gsh", "r");
             while ((apActual = leer.getFilePointer()) != (apFinal = leer.length())) {
-                System.out.println("Llave: "+leer.readInt()+"Dirección: "+leer.readLong());
+                auxl = leer.readInt();
+                auxd = leer.readLong();
+                if(auxl!=0) {
+                    System.out.println("Llave: " + auxl + " - Dirección: " + auxd);
+                }
             }
             leer.close();
         } catch (IOException e) {

@@ -9,35 +9,28 @@ public class Maestro {
     private long lreg = 0, ultimo = 0;
     private int matriz[][], datos;
 
-    public Maestro(int datos) {
-        this.datos = (int) ((int) datos + datos * .4);
-        matriz = new int[this.datos][this.datos];
+    public Maestro() {
+        /*this.datos = (int) ((int) datos + datos * .4);
+        matriz = new int[this.datos][this.datos];*/
     }
 
-    public void escribirB(int llave, String nombre, String nodos) {
+    public void escribirB(int llave, String nombre) {
         StringBuffer bf;
-        String nodes[];
         int cont = 0;
-        nodes = nodos.split(",");
         try {
-            archivoE = new RandomAccessFile("maestroB.gsh", "rw");
-            archivoE.seek(ultimo);
-            archivoE.writeInt(llave);
-            bf = new StringBuffer(nombre);
-            bf.setLength(15);
-            archivoE.writeChars(bf.toString());
-            for (int i = 0; i < datos; i++) {
-                if (cont < nodes.length) {
-                    if (i == Integer.parseInt(nodes[cont].split(" ")[0]) - 1) {
-                        archivoE.writeInt(Integer.parseInt(nodes[cont].split(" ")[1]));
-                        cont++;
-                    } else
-                        archivoE.writeInt(0);
-                } else
-                    archivoE.writeInt(0);
+            if (!nombre.contains("∨") || !nombre.contains("v")) {
+                archivoE = new RandomAccessFile("maestroB.gsh", "rw");
+                ultimo = archivoE.length();
+                archivoE.seek(ultimo);
+                archivoE.writeInt(llave);
+                bf = new StringBuffer(nombre);
+                bf.setLength(99);
+                archivoE.writeChars(bf.toString());
+                ultimo = archivoE.getFilePointer();
+                archivoE.close();
             }
-            ultimo = archivoE.getFilePointer();
-            archivoE.close();
+            else
+                System.out.println("Esta regla no esta normalizada");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -46,7 +39,7 @@ public class Maestro {
 
     public void leerB(long posicion) {
         String nom;
-        char nombre[] = new char[15];
+        char nombre[] = new char[99];
         try {
             if (posicion != -1) {
                 archivoL = new RandomAccessFile("maestroB.gsh", "r");
@@ -55,10 +48,7 @@ public class Maestro {
                 for (int i = 0; i < nombre.length; i++)
                     nombre[i] = archivoL.readChar();
                 nom = new String(nombre).replace('\0', ' ');
-                System.out.println("Nombre: " + nom);
-                System.out.println("Nodos: ");
-                for (int i = 0; i < datos; i++)
-                    System.out.println((i + 1) + ") " + archivoL.readInt());
+                System.out.println("Regla: " + nom);
             } else
                 System.out.println("Error, Esa dirección no existe.");
 
@@ -71,19 +61,19 @@ public class Maestro {
         String nom;
         int valor;
         long apActual, apFinal, salida = -1;
-        char nombre[] = new char[15];
+        char nombre[] = new char[99];
         try {
             archivoL = new RandomAccessFile("maestroB.gsh", "r");
             while ((apActual = archivoL.getFilePointer()) != (apFinal = archivoL.length())) {
-                System.out.println("Llave: " + archivoL.readInt());
+                valor =archivoL.readInt();
                 for (int i = 0; i < nombre.length; i++)
                     nombre[i] = archivoL.readChar();
                 nom = new String(nombre).replace('\0', ' ');
-                System.out.println("Nombre: " + nom);
-                System.out.println("Nodos: ");
-                for (int i = 0; i < datos; i++)
-                    System.out.println((i + 1) + ") " + archivoL.readInt());
-                System.out.println("---------------------------------------------------");
+                if(valor != 0) {
+                    System.out.println("Llave: " + valor);
+                    System.out.println("Regla: " + nom);
+                    System.out.println("---------------------------------------------------");
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -92,10 +82,11 @@ public class Maestro {
 
     public void actualizar(long posicion, boolean eliminar) {
         Scanner s = new Scanner(System.in);
+        StringBuffer bf;
         String nom, nodos;
         int llave;
         long apActual, apFinal;
-        char nombre[] = new char[15];
+        char nombre[] = new char[99];
         try {
             if (posicion != -1) {
                 archivoL = new RandomAccessFile("maestroB.gsh", "rw");
@@ -106,28 +97,33 @@ public class Maestro {
                     for (int i = 0; i < nombre.length; i++)
                         nombre[i] = archivoL.readChar();
                     nom = new String(nombre).replace('\0', ' ');
-                    System.out.println("Cambiar de " + nom + " al nombre: ");
+                    System.out.println("Cambiar de " + nom.trim() + " a la regla: ");
                     nom = s.nextLine();
-                    System.out.println("Ingresa los nodos: ");
-                    nodos = s.nextLine();
-                    escribirB(llave, nom, nodos);
+                    archivoL.seek(posicion);
+                    archivoL.writeInt(llave);
+                    bf = new StringBuffer(nom);
+                    bf.setLength(99);
+                    archivoL.writeChars(bf.toString());
+                    //escribirB(llave, nom);
                     archivoL.seek(posicion);
                 }
-                archivoL.writeInt(0);
-                for (int i = 0; i < 15; i++)
-                    archivoL.writeChar('0');
-                for (int i = 0; i < datos; i++)
+                else {
                     archivoL.writeInt(0);
-                archivoL.seek(0);
-                while ((apActual = archivoL.getFilePointer()) != (apFinal = archivoL.length())) {
-                    archivoL.readInt();
-                    for (int e = 0; e < 15; e++)
-                        archivoL.readChar();
-                    for (int i = 0; i < datos; i++)
-                        if (i == posicion / (34 + 4 * datos))
-                            archivoL.writeInt(0);
-                        else
-                            archivoL.readInt();
+                    for (int i = 0; i < 99; i++)
+                        archivoL.writeChar('0');
+                    /*for (int i = 0; i < datos; i++)
+                        archivoL.writeInt(0);
+                    archivoL.seek(0);
+                    while ((apActual = archivoL.getFilePointer()) != (apFinal = archivoL.length())) {
+                        archivoL.readInt();
+                        for (int e = 0; e < 99; e++)
+                            archivoL.readChar();
+                        for (int i = 0; i < datos; i++)
+                            if (i == posicion / (34 + 4 * datos))
+                                archivoL.writeInt(0);
+                            else
+                                archivoL.readInt();
+                    }*/
                 }
             } else
                 System.out.println("Error, Ese registro no existe.");
@@ -139,5 +135,8 @@ public class Maestro {
 
     public int getDatos() {
         return datos;
+    }
+    public int getUltimo(){
+        return (int) (ultimo-202);
     }
 }
