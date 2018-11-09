@@ -1,6 +1,7 @@
 package Main.Archivos;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Maestro {
@@ -89,6 +90,30 @@ public class Maestro {
             }
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+    public ArrayList<String> obtenerReglas() {
+        String nom;
+        int valor;
+        long apActual, apFinal;
+        char nombre[] = new char[99];
+        ArrayList<String> reglas = new ArrayList<>();
+        try {
+            archivoL = new RandomAccessFile("maestroB.gsh", "r");
+            while ((apActual = archivoL.getFilePointer()) != (apFinal = archivoL.length())) {
+                valor = archivoL.readInt();
+                for (int i = 0; i < nombre.length; i++)
+                    nombre[i] = archivoL.readChar();
+                nom = new String(nombre).replace('\0', ' ');
+                if (valor != 0) {
+                    reglas.add(nom);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            return reglas;
         }
     }
 
