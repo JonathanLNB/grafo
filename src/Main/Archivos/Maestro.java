@@ -15,7 +15,7 @@ public class Maestro {
     public void escribirB(int llave, String nombre) {
         StringBuffer bf;
         try {
-            if (!nombre.contains("∨") || !nombre.contains("v")) {
+            if ((!nombre.contains("∨") || !nombre.contains("v")) && !nombre.contains("-")) {
                 archivoE = new RandomAccessFile("maestroB.gsh", "rw");
                 ultimo = archivoE.length();
                 archivoE.seek(ultimo);
@@ -25,8 +25,24 @@ public class Maestro {
                 archivoE.writeChars(bf.toString());
                 ultimo = archivoE.getFilePointer();
                 archivoE.close();
-            } else
-                System.out.println("Esta regla no esta normalizada");
+            } else {
+                if ((nombre.contains("v") || nombre.contains("∨")) && nombre.contains("¬")) {
+                    if (nombre.split("¬").length > 1) {
+                        archivoE = new RandomAccessFile("maestroB.gsh", "rw");
+                        ultimo = archivoE.length();
+                        archivoE.seek(ultimo);
+                        archivoE.writeInt(llave);
+                        bf = new StringBuffer(nombre);
+                        bf.setLength(99);
+                        archivoE.writeChars(bf.toString());
+                        ultimo = archivoE.getFilePointer();
+                        archivoE.close();
+                    } else
+                        System.out.println("Esta regla no esta normalizada");
+                }
+                else
+                    System.out.println("Esta regla no esta normalizada");
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
