@@ -16,7 +16,7 @@ public class Maestro {
     public void escribirB(int llave, String nombre) {
         StringBuffer bf;
         try {
-            if ((!nombre.contains("∨") || !nombre.contains("v")) && !nombre.contains("-")) {
+            if ((!nombre.contains("∨") || !nombre.contains("v")) && nombre.contains("-")) {
                 archivoE = new RandomAccessFile("maestroB.gsh", "rw");
                 ultimo = archivoE.length();
                 archivoE.seek(ultimo);

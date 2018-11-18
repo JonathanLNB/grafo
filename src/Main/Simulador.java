@@ -78,7 +78,7 @@ public class Simulador {
         String aux2[];
         int opc, elegido;
         boolean usado = false, no = false;
-        while(reglas.size()>1){
+       do{
             System.out.println("--------------------------------------------");
             System.out.println("Ingresa un hecho: ");
             aux = s.nextLine();
@@ -92,7 +92,7 @@ public class Simulador {
             if(reglas.size()>1){
                 elegido = ((int)(Math.random()*reglas.size()));
                 aux2 = reglas.get(elegido).split("-")[0].split("\\^");
-                for(int i = aux2.length-1; i > 0; i --){
+                for(int i = aux2.length-1; i >= 0; i --){
                     usado = true;
                     no = false;
                     for(int e = 0; e < datos.size(); e++){
@@ -127,10 +127,18 @@ public class Simulador {
                     }
                 }
             }
-        }
-        if(reglas.size() == 0)
+        }while(reglas.size()>1);
+        if(reglas.size() == 0) {
             System.out.println("Esa bebida no esta entre mi conocimiento :(");
-        else
-            System.out.println("Esa bebida es: "+reglas.get(0).split("-")[1]);
+            inferir(datos);
+        }else {
+            System.out.println("Esa bebida es: " + reglas.get(0).split("-")[1]);
+            datos.add(reglas.get(0).split("-")[1]);
+            inferir(datos);
+        }
+        System.out.println("--------------------------------------------");
+    }
+    public void inferir(ArrayList<String> hechos){
+
     }
 }
