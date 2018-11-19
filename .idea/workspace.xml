@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indexB.gsh" beforeDir="false" afterPath="$PROJECT_DIR$/indexB.gsh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maestroB.gsh" beforeDir="false" afterPath="$PROJECT_DIR$/maestroB.gsh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Grafo/Main/Archivos/Maestro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Grafo/Main/Archivos/Maestro.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Grafo/Main/Simulador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Grafo/Main/Simulador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Archivos/Maestro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Archivos/Maestro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Simulador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Simulador.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -90,6 +88,7 @@
           <entry key="project.open.time.160" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.70" value="1" />
@@ -98,32 +97,32 @@
           <entry key="project.open.time.77" value="1" />
           <entry key="project.open.time.79" value="2" />
           <entry key="project.open.time.81" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="40" />
-          <entry key="java" value="7849" />
+          <entry key="java" value="8645" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7849" />
+          <entry key="JAVA" value="8645" />
           <entry key="XML" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="fxml" value="4" />
-          <entry key="gsh" value="17" />
-          <entry key="java" value="21" />
+          <entry key="gsh" value="19" />
+          <entry key="java" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="21" />
-          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="JAVA" value="22" />
+          <entry key="PLAIN_TEXT" value="19" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -150,8 +149,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main/Simulador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="132" column="25" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
+            <state relative-caret-position="541">
+              <caret line="128" column="75" lean-forward="true" selection-start-line="128" selection-start-column="75" selection-end-line="128" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -159,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Maestro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+            <state relative-caret-position="134">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -232,7 +231,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
@@ -245,7 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,6 +273,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -289,17 +288,19 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541743530657" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542597630572" />
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Documentos\Tecno\7mo Semestre\Inteligencia Artificial\Grafo\src\images" />
-      <recent name="D:\Documentos\Tecno\7mo Semestre\Inteligencia Artificial\Grafo\src\Main\GUI" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documentos\Tecno\7mo Semestre\Inteligencia Artificial\Grafo\src\Main\Views\Principal" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documentos\Tecno\7mo Semestre\Inteligencia Artificial\Grafo" />
+      <recent name="D:\Documentos\Tecno\7mo Semestre\Inteligencia Artificial\Grafo\src" />
+      <recent name="D:\Documentos\Tecno\7mo Semestre\Inteligencia Artificial\Grafo\src\images" />
+      <recent name="D:\Documentos\Tecno\7mo Semestre\Inteligencia Artificial\Grafo\src\Main\GUI" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -440,12 +441,13 @@
       <workItem from="1541721994187" duration="15724000" />
       <workItem from="1541769729603" duration="10853000" />
       <workItem from="1542170751935" duration="688000" />
-      <workItem from="1542572112911" duration="587000" />
+      <workItem from="1542572112911" duration="6218000" />
+      <workItem from="1542589717595" duration="5667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93359000" />
+    <option name="totallyTimeSpent" value="104657000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -457,10 +459,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1386" height="788" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.30769232" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18910742" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -471,7 +473,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4918033" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34262297" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43278688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
@@ -507,6 +509,60 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
+          <line>197</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -522,9 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="73" column="29" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,15 +643,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maestroB.gsh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Premisas.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maestroB.gsh" />
+    <entry file="file://$PROJECT_DIR$/maestroB.gsh">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -609,8 +663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Maestro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+        <state relative-caret-position="134">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -619,8 +673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Simulador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="132" column="25" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
+        <state relative-caret-position="541">
+          <caret line="128" column="75" lean-forward="true" selection-start-line="128" selection-start-column="75" selection-end-line="128" selection-end-column="75" />
         </state>
       </provider>
     </entry>
