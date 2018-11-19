@@ -84,7 +84,7 @@ public class Simulador {
         do {
             System.out.println("Ingresa un hecho (Ingresa 0 para dejar de ingresar hechos): ");
             aux = s.nextLine();
-            if (!aux.equalsIgnoreCase("0") || aux.trim().length()!=0)
+            if (!aux.equalsIgnoreCase("0") && aux.trim().length()!=0)
                 datos.add(aux);
         } while (!aux.equalsIgnoreCase("0"));
         equiparar();
