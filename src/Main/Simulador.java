@@ -77,20 +77,20 @@ public class Simulador {
         } while (aux < 8);
     }
 
-    public void agregarHechos(){
+    public void agregarHechos() {
         Scanner s = new Scanner(System.in);
         String aux;
         System.out.println("--------------------------------------------");
         do {
             System.out.println("Ingresa un hecho (Ingresa 0 para dejar de ingresar hechos): ");
             aux = s.nextLine();
-            if (!aux.equalsIgnoreCase("0") && aux.trim().length()!=0)
+            if (!aux.equalsIgnoreCase("0") && aux.trim().length() != 0)
                 datos.add(aux);
         } while (!aux.equalsIgnoreCase("0"));
         equiparar();
     }
 
-    public void equiparar(){
+    public void equiparar() {
         ArrayList<String> reglas = maestro.obtenerReglas();
         for (int e = 0; e < datos.size(); e++) {
             for (int i = 0; i < reglas.size(); i++) {
@@ -102,31 +102,89 @@ public class Simulador {
         inferir();
     }
 
-    public void agregarConjuntoConflicto(String aux){
+    public void agregarConjuntoConflicto(String aux) {
+        int cont = 0;
         boolean agregar = true;
-        for(int i = 0; i < consuntoC.size(); i++){
-            if(consuntoC.get(i).trim().toLowerCase().equalsIgnoreCase(aux))
-               agregar = false;
-        }
-        if(agregar)
-            consuntoC.add(aux);
-        agregar = true;
-        for(int i = 0; i < datos.size(); i++) {
-            if (!aux.split("-")[0].trim().toLowerCase().contains(datos.get(i).trim().toLowerCase()))
+        for (int i = 0; i < consuntoC.size(); i++) {
+            if (consuntoC.get(i).trim().toLowerCase().equalsIgnoreCase(aux))
                 agregar = false;
         }
-        if(agregar) {
-            nuevosHechos.add(aux.split("-")[1].trim());
-            datos.add(aux.split("-")[1].trim());
+        if (agregar)
+            consuntoC.add(aux);
+        //agregar = true;
+        for (int i = 0; i < datos.size(); i++) {
+            if (!aux.split("-")[0].trim().toLowerCase().contains(datos.get(i).trim().toLowerCase()))
+                cont +=1;
+        }
+        //if (agregar) {
+        if(cont == aux.split("-")[0].split("\\^").length){
+           // if (aux.split("-")[0].split("\\^").length == datos.size()) {
+                nuevosHechos.add(aux.split("-")[1].trim());
+                datos.add(aux.split("-")[1].trim());
+            //}
         }
     }
 
-    public void inferir(){
-        if(nuevosHechos.size()>0)
-            System.out.println("Subebida es una "+nuevosHechos.get(0));
-        else
-            System.out.println("Esa bebida no esta entre mi conocimiento :(");
-        System.out.println("--------------------------------------------");
+    public void inferir() {
+        Scanner s = new Scanner(System.in);
+        String aux;
+        String aux2[];
+        int opc, elegido;
+        boolean usado = false, no = false;
+        if (nuevosHechos.size() > 0)
+            System.out.println("Subebida es una " + nuevosHechos.get(0));
+        else {
+            if (consuntoC.size() == 0)
+                System.out.println("Esa bebida no esta entre mi conocimiento :(");
+            else {
+                for (int i = 0; i < datos.size(); i++) {
+                    for (int a = 0; a < consuntoC.size(); a++) {
+                        if (!consuntoC.get(a).trim().toLowerCase().contains(datos.get(i).trim().toLowerCase())) {
+                            consuntoC.remove(a);
+                            a--;
+                        }
+                    }
+                }
+                while (consuntoC.size() > 1){
+                    elegido = ((int) (Math.random() * consuntoC.size()));
+                    aux2 = consuntoC.get(elegido).split("-")[0].split("\\^");
+                    for (int i = aux2.length - 1; i >= 0; i--) {
+                        usado = true;
+                        for (int e = 0; e < datos.size(); e++) {
+                            if (datos.get(e).trim().toLowerCase().equalsIgnoreCase(aux2[i].trim().toLowerCase())) {
+                                usado = false;
+                            }
+                        }
+                        if (usado) {
+                            System.out.println("¿Su bebida tiene " + aux2[i] + "?");
+                            System.out.println("    1) Si");
+                            System.out.println("    2) No");
+                            opc = s.nextInt();
+                            switch (opc) {
+                                case 1:
+                                    for (int a = 0; a < consuntoC.size(); a++) {
+                                        if (!consuntoC.get(a).trim().toLowerCase().contains(aux2[i].trim().toLowerCase())) {
+                                            consuntoC.remove(a);
+                                            a--;
+                                        }
+                                    }
+                                    datos.add(aux2[i]);
+                                    break;
+                                default:
+                                    consuntoC.remove(elegido);
+                                    no = true;
+                                    break;
+                            }
+                        }
+                    }
+                }
+                if (consuntoC.size() == 0)
+                    System.out.println("Esa bebida no esta entre mi conocimiento :(");
+                else
+                    System.out.println("Esa bebida es: " + consuntoC.get(0).split("-")[1]);
+                System.out.println("--------------------------------------------");
+            }
+        }
     }
 /*
     public void equiparar() {
