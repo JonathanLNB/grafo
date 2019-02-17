@@ -6,6 +6,8 @@ import Main.Archivos.Maestro;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 public class Simulador {
     private Maestro maestro;
@@ -30,6 +32,7 @@ public class Simulador {
             System.out.println("    6)Mostrar Indice");
             System.out.println("    7)Sistema Experto");
             System.out.println("    8)Salir");
+            //System.out.println("    9)PRUEBA DE METODO");
             aux = s.nextInt();
             switch (aux) {
                 case 1:
@@ -70,13 +73,38 @@ public class Simulador {
                     nuevosHechos = new ArrayList<>();
                     agregarHechos();
                     break;
+                /*case 9:
+                    buscarTextoRegla();
+                    break;*/
                 default:
                     System.out.println("Gracias :3");
                     break;
             }
         } while (aux < 8);
     }
-
+    //Método BÚSQUEDA de texto de regla mediante el número de llave
+    //Agregar RUTA completa de la ubicación del archivo ya creado para que pueda ser leido
+    public String buscarTextoRegla() {
+        int llave = 1;
+        String[] parts;
+        String cadena,aux=null;
+        try {
+            FileReader f = new FileReader("C:/Users/YESSENIA/Desktop/grafo-aiuda/src/Main/reglasTexto.txt");
+            BufferedReader b = new BufferedReader(f);
+            while ((cadena = b.readLine()) != null) {
+                parts = cadena.split(",");
+                if (Integer.parseInt(parts[0]) == llave) {
+                    aux=parts[1];
+                    break;
+                }
+            }
+            b.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //System.out.println( aux);
+        return aux;
+    }
     public void agregarHechos() {
         Scanner s = new Scanner(System.in);
         String aux;
