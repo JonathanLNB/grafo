@@ -2,6 +2,7 @@ package Main;
 
 import Main.Archivos.Indexado;
 import Main.Archivos.Maestro;
+import Main.Archivos.Justificacion;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,6 +13,7 @@ import java.io.FileReader;
 public class Simulador {
     private Maestro maestro;
     private Indexado index;
+    private Justificacion justificacion;
     private ArrayList<String> datos;
     private ArrayList<String> consuntoC;
     private ArrayList<String> nuevosHechos;
@@ -22,6 +24,8 @@ public class Simulador {
         int llave, aux = 0;
         maestro = new Maestro();
         index = new Indexado();
+        justificacion = new Justificacion();
+        
         do {
             System.out.println("Ingresa la opción deseada");
             System.out.println("    1)Ingresar Regla");
@@ -43,6 +47,9 @@ public class Simulador {
                     nom = s.nextLine();
                     maestro.escribirB(llave, nom);
                     index.escribirArchivo(llave, maestro.getUltimo());
+                    System.out.println("Ingresa la justificacion: ");
+                    nom = s.nextLine();
+                    justificacion.escribirArchivo(llave, nom);
                     break;
                 case 2:
                     System.out.println("Ingresa la llave a buscar: ");
@@ -82,29 +89,7 @@ public class Simulador {
             }
         } while (aux < 8);
     }
-    //Método BÚSQUEDA de texto de regla mediante el número de llave
-    //Agregar RUTA completa de la ubicación del archivo ya creado para que pueda ser leido
-    public String buscarTextoRegla() {
-        int llave = 1;
-        String[] parts;
-        String cadena,aux=null;
-        try {
-            FileReader f = new FileReader("C:/Users/YESSENIA/Desktop/grafo-aiuda/src/Main/reglasTexto.txt");
-            BufferedReader b = new BufferedReader(f);
-            while ((cadena = b.readLine()) != null) {
-                parts = cadena.split(",");
-                if (Integer.parseInt(parts[0]) == llave) {
-                    aux=parts[1];
-                    break;
-                }
-            }
-            b.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        //System.out.println( aux);
-        return aux;
-    }
+
     public void agregarHechos() {
         Scanner s = new Scanner(System.in);
         String aux;
