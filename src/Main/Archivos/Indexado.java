@@ -80,7 +80,8 @@ public class Indexado {
                 auxl = leer.readInt();
                 auxd = leer.readLong();
                 if (auxl != 0) {
-                    System.out.println("Llave: " + auxl + " - Dirección: " + (auxd / 202 + 1));
+                    if (auxl > 0 && (auxd / 202 + 1) != 0)
+                        System.out.println("Llave: " + auxl + " - Dirección: " + (auxd / 202 + 1));
                 }
             }
             leer.close();

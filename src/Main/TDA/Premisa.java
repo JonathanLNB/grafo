@@ -1,7 +1,19 @@
 package Main.TDA;
 
 public class Premisa {
-    private String llave;
+    private int llave;
+    private String regla;
 
-    private String justificacion;
+    public Premisa(int llave, String regla) {
+        this.llave = llave;
+        this.regla = regla;
+    }
+
+    public int getLlave() {
+        return llave;
+    }
+
+    public String getRegla() {
+        return regla;
+    }
 }

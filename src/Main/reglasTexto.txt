@@ -1,3 +1,0 @@
-0,est no debe salir
-1,Esto es una prueba de lectura
-2,Esto tampoco debe salir

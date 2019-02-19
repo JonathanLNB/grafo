@@ -1,5 +1,8 @@
 package Main.Archivos;
 
+import Main.Simulador;
+import Main.TDA.Premisa;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -7,10 +10,12 @@ import java.util.Scanner;
 public class Maestro {
     private RandomAccessFile archivoL;
     private RandomAccessFile archivoE;
+    private Simulador s;
     private long ultimo = 0;
 
 
-    public Maestro() {
+    public Maestro(Simulador s) {
+        this.s = s;
     }
 
     public void escribirB(int llave, String nombre) {
@@ -85,6 +90,7 @@ public class Maestro {
                 if (valor != 0) {
                     System.out.println("Llave: " + valor);
                     System.out.println("Regla: " + nom);
+                    System.out.println("Justificación: "+s.getJustificacion(valor));
                     System.out.println("---------------------------------------------------");
                 }
             }
@@ -92,12 +98,12 @@ public class Maestro {
             e.printStackTrace();
         }
     }
-    public ArrayList<String> obtenerReglas() {
+    public ArrayList<Premisa> obtenerReglas() {
         String nom;
         int valor;
         long apActual, apFinal;
         char nombre[] = new char[99];
-        ArrayList<String> reglas = new ArrayList<>();
+        ArrayList<Premisa> reglas = new ArrayList<>();
         try {
             archivoL = new RandomAccessFile("maestroB.gsh", "r");
             while ((apActual = archivoL.getFilePointer()) != (apFinal = archivoL.length())) {
@@ -106,7 +112,7 @@ public class Maestro {
                     nombre[i] = archivoL.readChar();
                 nom = new String(nombre).replace('\0', ' ');
                 if (valor != 0) {
-                    reglas.add(nom);
+                    reglas.add(new Premisa(valor, nom));
                 }
             }
         } catch (IOException e) {

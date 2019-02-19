@@ -1,0 +1,23 @@
+1;Es un Sunrise Shot, esta bebida contiene 2 onz de tequila y jugo de naranja.
+2;Es un Green Shot, esta bebida contiene 2 onz de tequila y jugo de lim贸n.
+3;Es un Cucaracha Flameada, esta bebida contiene 2 onz de tequila y se complementa con fuego.
+4;Es un Cuba, esta bebida contiene 4 onz de tequila, se sirve en las rocas y contiene refresco de toronja.
+5;Es un Margarita en las Rocas, esta bebida contiene 4 onz de tequila, se sirve en las rocas y se complementa con controy
+6;Es un Margarita Shakeada, esta bebida contiene 4 onz de tequila, se sirve shakeado y se complementa con controy
+7;Es un Margarita Frappeada, esta bebida contiene 4 onz de tequila, se sirve frappeado y se complementa con controy.
+8;Es un Daiquiri en las Rocas, esta bebida contiene 4 onz de tequila, se sirve en las rocas y tiene jugo de lim贸n.
+9;Es un Daiquiri Frappeado, esta bebida contiene 4 onz de tequila, se sirve shakeado y tiene jugo de lim贸n.
+10;Es un Daiquiri Shakeado, esta bebida contiene 4 onz de tequila, se sirve frappeado y tiene jugo de lim贸n.
+11;Es un Bloody Mary, esta bebida contiene 4 onz de tequila, se sirve en las rocas y se complementa con salsa.
+12;Es un Vampiro, esta bebida contiene 4 onz de tequila, se sirve en las rocas y se complementa con miel.
+13;Es un Charro negro, esta bebida contiene 4 onz de tequila, se sirve en las rocas y tiene refresco de cola.
+14;Es un Sunrise, esta bebida contiene 4 onz de tequila, se sirve en las rocas y tiene jugo de naranja.
+15;Es un Paloma, esta bebida contiene 4 onz de tequila, se sirve en las rocas, tiene refresco de toronja y se complementa con sal.
+16;Es un Cuba, esta bebida contiene 4 onz de tequila, se sirve en las rocas y tiene agua mineral.
+17;Es un Cuba, esta bebida contiene 4 onz de tequila, se sirve en las rocas y jugo de toronja.
+18;Es un Paloma, esta bebida contiene una cuba complementada con sal.
+
+
+19;Es una pi馻da por que tiene pi馻 y agua mineral
+20;Es agua fresca 
+21;El agua de pinia
