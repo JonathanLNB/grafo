@@ -18,6 +18,6 @@
 18;Es un Paloma, esta bebida contiene una cuba complementada con sal.
 
 
-19;Es una piñada por que tiene piña y agua mineral
-20;Es agua fresca 
+19;Es una piï¿½ada por que tiene piï¿½a y agua mineral
+20;Es agua mineral
 21;El agua de pinia

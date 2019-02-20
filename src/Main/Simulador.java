@@ -141,9 +141,13 @@ public class Simulador {
         String aux2[];
         int opc, elegido;
         boolean usado = false;
-        if (nuevosHechos.size() > 0)
-            System.out.println("Su bebida es una " + nuevosHechos.get(nuevosHechos.size()-1).getRegla().split("-")[1].trim());
-        else {
+        if (nuevosHechos.size() > 0) {
+        	for (int i = nuevosHechos.size(); i > 0; i--) {
+        		System.out.println("Regla: " + nuevosHechos.get(nuevosHechos.size()-i).getRegla());
+        		System.out.println("Justificacion: Su bebida es una " + getJustificacion(nuevosHechos.get(nuevosHechos.size()-i).getLlave()));
+        		System.out.println("--------------------------------------------");
+			}
+        } else {
             if (conjuntoC.size() == 0)
                 System.out.println("Esa bebida no esta entre mi conocimiento :(");
             else {
@@ -190,7 +194,8 @@ public class Simulador {
                 if (conjuntoC.size() == 0)
                     System.out.println("Esa bebida no esta entre mi conocimiento :(");
                 else
-                    System.out.println("Esa bebida es: " + conjuntoC.get(0).getRegla().split("-")[1].trim());
+                	System.out.println("Regla: " + conjuntoC.get(0).getRegla());
+        			System.out.println("Justificacion: Su bebida es una " + getJustificacion(conjuntoC.get(0).getLlave()));
                 System.out.println("--------------------------------------------");
             }
         }
