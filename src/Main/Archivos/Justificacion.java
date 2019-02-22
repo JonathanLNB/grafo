@@ -65,8 +65,8 @@ public class Justificacion {
             for (int i = 0; i < cont - 1; i++)
                 archivoL.readLine();
             if (eliminar) {
-                for (int i = 0; i < aux.length(); i++)
-                    archivoL.writeBytes("");
+                for (int e = 0; e < aux.length(); e++)
+                    archivoL.writeBytes(" ");
                 archivoL.writeBytes("\n");
             }
             else{

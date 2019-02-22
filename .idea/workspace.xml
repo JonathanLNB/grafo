@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/justificacion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indexB.gsh" beforeDir="false" afterPath="$PROJECT_DIR$/indexB.gsh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/justificacion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/justificacion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maestroB.gsh" beforeDir="false" afterPath="$PROJECT_DIR$/maestroB.gsh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Grafo/Main/Archivos/Dominios.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Grafo/Main/Archivos/Indexado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Grafo/Main/Archivos/Indexado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Grafo/Main/Archivos/Maestro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Grafo/Main/Archivos/Maestro.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Grafo/Main/Simulador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Grafo/Main/Simulador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Grafo/Main/TDA/Dominio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Grafo/Main/TDA/Premisa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Grafo/Main/TDA/Premisa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Archivos/Dominios.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Archivos/Indexado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Archivos/Indexado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Archivos/Justificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Archivos/Justificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Archivos/Maestro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Archivos/Maestro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Archivos/Premisas.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Simulador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Simulador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/TDA/Dominio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/TDA/Premisa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/TDA/Premisa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/reglasTexto.txt" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,12 +88,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Maestro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
+            <state relative-caret-position="1445">
               <caret line="92" column="84" selection-start-line="92" selection-start-column="84" selection-end-line="92" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,17 +102,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Justificacion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="69" column="36" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+            <state relative-caret-position="1088">
+              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/justificacion.txt">
+        <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -133,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Indexado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
+            <state relative-caret-position="1360">
               <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -145,12 +132,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main/Simulador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="144" column="91" selection-start-line="144" selection-start-column="91" selection-end-line="144" selection-end-column="91" />
+            <state relative-caret-position="252">
+              <caret line="126" column="65" selection-start-line="126" selection-start-column="65" selection-end-line="126" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3486#3487#0" expanded="true" />
-                <element signature="e#3540#3541#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,11 +145,10 @@
         <entry file="file://$PROJECT_DIR$/src/Main/TDA/Premisa.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#227#228#0" expanded="true" />
                 <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
                 <element signature="e#315#316#0" expanded="true" />
               </folding>
             </state>
@@ -217,7 +201,6 @@
         <option value="$PROJECT_DIR$/src/Main/Archivos/Main.java" />
         <option value="$PROJECT_DIR$/src/Main/TDA/Dominio.java" />
         <option value="$PROJECT_DIR$/src/Main/Archivos/Dominios.java" />
-        <option value="$PROJECT_DIR$/src/Main/Main.java" />
         <option value="$PROJECT_DIR$/src/Main/GUI/sample.fxml" />
         <option value="$PROJECT_DIR$/src/Main/GUI/home.fxml" />
         <option value="$PROJECT_DIR$/src/Main/GUI/page2.fxml" />
@@ -226,6 +209,7 @@
         <option value="$PROJECT_DIR$/src/Main/Archivos/Maestro.java" />
         <option value="$PROJECT_DIR$/justificacion.txt" />
         <option value="$PROJECT_DIR$/src/Main/Archivos/Justificacion.java" />
+        <option value="$PROJECT_DIR$/src/Main/Main.java" />
         <option value="$PROJECT_DIR$/src/Main/Simulador.java" />
       </list>
     </option>
@@ -245,7 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -283,6 +266,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,9 +278,10 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550522866274" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550798591712" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
@@ -458,12 +443,14 @@
       <workItem from="1542945397653" duration="1000000" />
       <workItem from="1550520623964" duration="1173000" />
       <workItem from="1550522108696" duration="1385000" />
-      <workItem from="1550554857825" duration="5790000" />
+      <workItem from="1550554857825" duration="6293000" />
+      <workItem from="1550775986462" duration="12453000" />
+      <workItem from="1550803715532" duration="615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119588000" />
+    <option name="totallyTimeSpent" value="133159000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,7 +465,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.28668684" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.295764" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -488,8 +475,8 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.49099836" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43207857" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.64648116" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43207857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
@@ -501,7 +488,7 @@
       <window_info anchor="bottom" id="Event Log" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32786885" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="15" weight="0.37213114" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.3715221" />
       <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -529,15 +516,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Archivos/Justificacion.java</url>
           <line>60</line>
           <properties />
-          <option name="timeStamp" value="31" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Archivos/Justificacion.java</url>
@@ -546,55 +527,48 @@
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Archivos/Justificacion.java</url>
-          <line>68</line>
+          <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
+          <line>221</line>
           <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Archivos/Justificacion.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
-          <line>143</line>
+          <line>226</line>
           <properties />
-          <option name="timeStamp" value="41" />
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
-          <line>126</line>
+          <line>157</line>
           <properties />
-          <option name="timeStamp" value="44" />
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
-          <line>131</line>
+          <line>159</line>
           <properties />
-          <option name="timeStamp" value="45" />
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
-          <line>110</line>
+          <line>175</line>
           <properties />
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
-          <line>128</line>
+          <line>204</line>
           <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main/Simulador.java</url>
-          <line>125</line>
-          <properties />
-          <option name="timeStamp" value="48" />
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="conjuntoC" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -612,39 +586,52 @@
     <entry file="file://$PROJECT_DIR$/src/Main/GUI/home.fxml" />
     <entry file="file://$PROJECT_DIR$/src/Main/GUI/Controller.java" />
     <entry file="file://$PROJECT_DIR$/src/Main/GUI/Main.java" />
-    <entry file="file://$PROJECT_DIR$/indexB.gsh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/maestroB.gsh" />
-    <entry file="file://$PROJECT_DIR$/maestroB.gsh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Premisas.java" />
     <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Dominios.java" />
     <entry file="file://$PROJECT_DIR$/src/Main/TDA/Dominio.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main/TDA/Premisa.java">
+    <entry file="file://$PROJECT_DIR$/maestroB.gsh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/justificacion.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="153">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexB.gsh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Maestro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="92" column="84" selection-start-line="92" selection-start-column="84" selection-end-line="92" selection-end-column="84" />
           <folding>
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Justificacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Indexado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="1360">
           <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -652,40 +639,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Justificacion.java">
+    <entry file="file://$PROJECT_DIR$/src/Main/TDA/Premisa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="69" column="36" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/justificacion.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Archivos/Maestro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="92" column="84" selection-start-line="92" selection-start-column="84" selection-end-line="92" selection-end-column="84" />
+        <state relative-caret-position="238">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Simulador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="144" column="91" selection-start-line="144" selection-start-column="91" selection-end-line="144" selection-end-column="91" />
+        <state relative-caret-position="252">
+          <caret line="126" column="65" selection-start-line="126" selection-start-column="65" selection-end-line="126" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3486#3487#0" expanded="true" />
-            <element signature="e#3540#3541#0" expanded="true" />
           </folding>
         </state>
       </provider>

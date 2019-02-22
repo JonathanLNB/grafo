@@ -17,7 +17,7 @@
 17;Es un Cuba, esta bebida contiene 4 onz de tequila, se sirve en las rocas y jugo de toronja.
 18;Es un Paloma, esta bebida contiene una cuba complementada con sal.
 
-
-19;Es una pi�ada por que tiene pi�a y agua mineral
-20;Es agua mineral
-21;El agua de pinia
+21;Tiene Gripa porque el paciente tiene fiebre, toz y dolor
+22;Tiene Asma porque tiene gripa y toz
+23;Tiene bronquitis porque tiene asma y dolor
+24;Tiene bronconomonia porque tiene bronquitis y fiebre
