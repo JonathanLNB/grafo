@@ -124,7 +124,7 @@ public class Simulador {
             if (conjuntoC.get(i).getRegla().trim().toLowerCase().equalsIgnoreCase(aux.getRegla().trim()))
                 agregar = false;
         }
-        valor = aux.getRegla().split("-")[0].split("\\^").length;
+        valor = aux.getRegla().split("-")[0].split("\\^").length;7
         if (agregar)
             conjuntoC.add(aux);
         for (int i = 0; i < datos.size(); i++) {
